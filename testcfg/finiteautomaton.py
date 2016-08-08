@@ -1,6 +1,6 @@
 #import pcfg
 import cfg
-import partitionfunction
+#import partitionfunction
 
 class FiniteAutomaton:
 	"""
