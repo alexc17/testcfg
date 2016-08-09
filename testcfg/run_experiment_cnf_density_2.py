@@ -1,4 +1,8 @@
-# run experiment on fcp
+	# run experiment on fcp
+
+# So this runs on AWS without a Display
+import matplotlib
+matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 import random
