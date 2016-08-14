@@ -85,7 +85,7 @@ def test_strong_fcp_nt(grammar, parser, sampler, contextsampler, nt, k, ncontext
 			done.add(cis)
 
 			xcontexts = [ contexts[x] for x in cis]
-			print "XXX testing contexts", xcontexts
+			#print "XXX testing contexts", xcontexts
 			if test_strong_fcp_contexts(grammar, parser, nt, xcontexts, nsamples):
 				good += 1
 				if stop:
@@ -157,7 +157,7 @@ def test_strong_fcp_contexts(grammar, parser,  nonterminal, contexts, nsamples):
 	ig = grammar.context_grammar_without_nt(first_context, nonterminal)
 	#ig.dump()
 	if ig.is_empty():
-		print "Exact FCP success"
+		#print "Exact FCP success"
 		return True
 	# otherwise 
 	sample_strings = pick_some_inside_strings(ig, first_context, nsamples)

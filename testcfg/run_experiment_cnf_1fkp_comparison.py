@@ -74,9 +74,12 @@ for k in [1]:
 		y.append(ratio)
 		ye.append( f1p/ number_grammars)
 
+	print "Results: inexact"
 	print x
 	print y
-
+	print "results: exact"
+	print xe
+	print ye
 	
 
 	plt.plot(x,y, 'x-')

@@ -27,7 +27,7 @@ factory.number_lexical_productions = 50
 
 
 #factory.no_lexical_ambiguity = True
-number_grammars = 100
+number_grammars = 10
 max_length = 20
 nyields = 10
 
