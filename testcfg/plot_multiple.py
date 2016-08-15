@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import json
 import collections
 
-nslices = 2
+nslices = 40
 aggregate = []
 
 for n in range(1,nslices+1):
@@ -62,4 +62,4 @@ plt.xlabel('$|P_L|$')
 plt.ylabel('k-FCP')
 
 #plt.legend(legend, loc='lower right')
-plt.savefig('../figures/figure_cnf_kfcp_parallel.pdf')
+plt.savefig('../figures/figure_cnf_kfcp_1000.pdf')
