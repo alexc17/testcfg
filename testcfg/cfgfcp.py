@@ -331,9 +331,9 @@ def test_strong_fkp_nt(grammar, parser, sampler, nonterminal, k, ncontexts, stop
 	Sample k-sized subsets of these randomly.
 	We test whether the shared contexts of these substrings are all contexts of the nonterminal.
 	"""
-	print "testing ", nonterminal
+	#print "testing ", nonterminal
 	possible_strings = list(pick_some_yields(grammar,sampler, nonterminal, number_yields))
-	print possible_strings
+	#print possible_strings
 	if len(possible_strings) <= k:
 		return test_strong_fkp_strings(grammar, parser, nonterminal, possible_strings, ncontexts)
 			

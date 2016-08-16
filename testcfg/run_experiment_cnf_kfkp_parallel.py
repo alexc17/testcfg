@@ -52,8 +52,8 @@ data = []
 for k in [1,2,3,4]:
 	x = []
 	y = []
-	#for lprod in [50,100,150,200,250,300]:
-	for lprod in [25, 50, 75,100]:#100,150,200,250,300]:
+	for lprod in [50,100,150,200,250,300]:
+	#for lprod in [25, 50, 75,100]:#100,150,200,250,300]:
 		x.append(lprod)
 		
 		factory.number_lexical_productions  = lprod
