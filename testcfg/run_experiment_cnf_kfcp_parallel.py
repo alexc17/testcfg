@@ -76,6 +76,8 @@ for k in [1,2,3,4]:
 			data.append((k,lprod, result) )
 			print k, lprod, result
 
+print "Finishing"
 data_file = open(args.filename,'w')
 json.dump(data , data_file)
 data_file.close()
+print "Wrote file ok"

@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 import json
 import collections
 
-nslices = 40
+nslices = 1
 aggregate = []
 
 for n in range(1,nslices+1):
 
-	handle = open("../data/kfcp." + str(n))
+	handle = open("../data/results_hack." + str(n))
 	results = json.load(handle)
 	handle.close()
 	aggregate.extend(results)
@@ -62,4 +62,4 @@ plt.xlabel('$|P_L|$')
 plt.ylabel('k-FCP')
 
 #plt.legend(legend, loc='lower right')
-plt.savefig('../figures/figure_cnf_kfcp_1000.pdf')
+plt.savefig('../figures/figure_cnf_kfcp_500.pdf')
